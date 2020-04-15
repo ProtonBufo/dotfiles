@@ -12,6 +12,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'junegunn/goyo.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'JamshedVesuna/vim-markdown-preview'
+Plugin 'xuhdev/vim-latex-live-preview'
 call vundle#end()            
 filetype plugin indent on              
 
@@ -65,3 +66,9 @@ map <F8> z=<CR>
 let vim_markdown_preview_github=1
 let vim_markdown_preview_toggle=2 
 let vim_markdown_preview_temp_file=1
+
+"========================================
+" LaTextPreview Settings
+"========================================
+let g:livepreview_previewer = 'open -a Skim'
+let g:livepreview_engine = 'pdflatex'
